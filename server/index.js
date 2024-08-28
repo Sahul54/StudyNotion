@@ -21,8 +21,16 @@ database.connect();
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());	
+// app.use(cors());	
 
+const corsOptions = {
+	origin: 'https://study-notion-mwjdxc3tu-sahul-kumars-projects.vercel.app', // Replace with your frontend URL
+	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+	credentials: true, // If you’re using cookies or authorization headers
+	optionsSuccessStatus: 204
+  };
+
+app.use(cors(corsOptions));
 app.use(
 	fileUpload({
 		useTempFiles:true,

@@ -24,13 +24,13 @@ app.use(cookieParser());
 // app.use(cors());	
 
 const corsOptions = {
-	origin: 'https://study-notion-mwjdxc3tu-sahul-kumars-projects.vercel.app', // Replace with your frontend URL
+	origin: 'https://study-notion-mwjdxc3tu-sahul-kumars-projects.vercel.app', // Replace with your actual Vercel URL
 	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-	credentials: true, // If you’re using cookies or authorization headers
-	optionsSuccessStatus: 204
+	credentials: true, // Set this to true if you are dealing with cookies, authorization headers, etc.
+	optionsSuccessStatus: 204  
   };
-
-app.use(cors(corsOptions));
+  
+  app.use(cors(corsOptions));
 
 app.use(
 	fileUpload({

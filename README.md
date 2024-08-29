@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# StudyNotion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+StudyNotion is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack (MongoDB, Express.js, React.js, Node.js) to provide a seamless and interactive learning experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **For Students**:
+  - Browse and enroll in courses
+  - Rate and review courses
+  - Manage account details
+  - Wishlist and cart management
 
-### `npm start`
+- **For Instructors**:
+  - Create and manage courses
+  - View insights and feedback
+  - Manage profile details
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **For Admin (Future Scope)**:
+  - Platform overview and insights
+  - Instructor and course management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **Front-end**: React.js, Redux, Tailwind CSS, React Router
+- **Back-end**: Node.js, Express.js, JWT for authentication, Bcrypt for password hashing, Cloudinary for media management, Mongoose ODM
+- **Database**: MongoDB (hosted on MongoDB Atlas)
+- **Deployment**:
+  - Front-end: Vercel
+  - Back-end: Render or Railway
+  - Media: Cloudinary
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## System Architecture
 
-### `npm run build`
+- **Client-Server Architecture**: Front-end communicates with the back-end via RESTful APIs.
+- **Database**: MongoDB stores user data, course content, and other relevant information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API Endpoints (Sample)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `POST /api/auth/signup` - Create a new user account
+- `POST /api/auth/login` - Log in and generate JWT token
+- `GET /api/courses` - Retrieve all courses
+- `POST /api/courses` - Create a new course
+- `PUT /api/courses/:id` - Update an existing course
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
 
-### `npm run eject`
+- **Front-end**: Hosted on [Vercel]
+- **Back-end**: Hosted on [Render]
+- **Database**: Hosted on [MongoDB Atlas]
+- **Media**: Managed with [Cloudinary]
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Future Enhancements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Gamification**: Badges, points, and leaderboards
+- **Personalized Learning Paths**: Tailored learning experiences
+- **Social Learning**: Group discussions, peer feedback
+- **Mobile App**: Convenient access to content
+- **AI Recommendations**: Personalized course suggestions
+- **VR/AR Integration**: Immersive learning experiences
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the repo and Link**:
 
-## Learn More
+   git clone: https://github.com/Sahul54/StudyNotion
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   Live Link: https://study-notion-lae7d64lz-sahul-kumars-projects.vercel.app/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+### This project is licensed under the MIT License.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This README provides a high-level overview of the StudyNotion project, including its features, tech stack, architecture, and deployment instructions. It’s concise and easy to follow for developers who want to understand and contribute to the project.

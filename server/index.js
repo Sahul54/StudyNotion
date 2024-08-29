@@ -21,18 +21,20 @@ database.connect();
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
-// app.use(cors());	
+// app.use(cors());
 
+// CORS configuration
 const corsOptions = {
-	origin: 'https://study-notion-mwjdxc3tu-sahul-kumars-projects.vercel.app', // Replace with your actual Vercel URL
+	origin: 'https://study-notion-amber.vercel.app', // Replace with your actual Vercel URL
 	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-	credentials: true, // Set this to true if you are dealing with cookies, authorization headers, etc.
-	optionsSuccessStatus: 204  
-  };
+	credentials: true,
+	optionsSuccessStatus: 204
+};
   
+// Apply CORS middleware
 app.use(cors(corsOptions));
-
-// Handle preflight requests for all routes
+  
+// Handle preflight requests
 app.options('*', cors(corsOptions));
 
 app.use(

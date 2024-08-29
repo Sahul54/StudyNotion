@@ -25,7 +25,7 @@ app.use(cookieParser());
 
 // CORS configuration
 const corsOptions = {
-	origin: 'https://study-notion-amber.vercel.app', // Replace with your actual Vercel URL
+	origin: 'https://study-notion-oawxq4vyc-sahul-kumars-projects.vercel.app/', // Replace with your actual Vercel URL
 	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 	credentials: true,
 	optionsSuccessStatus: 204

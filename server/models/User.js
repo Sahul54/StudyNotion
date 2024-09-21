@@ -1,3 +1,4 @@
+// This is users model schema
 // Import the Mongoose library
 const mongoose = require("mongoose");
 

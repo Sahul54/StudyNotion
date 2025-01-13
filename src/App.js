@@ -30,7 +30,7 @@ import VideoDetails from "./components/core/ViewCourse/VideoDetails";
 import Instructor from "./components/core/Dashboard/InstructorDashboard/Instructor";
 import Scroll_To_Top_Button from "./utils/Scroll_To_Top_Button"
 
-import { SpeedInsights } from '@vercel/speed-insights/next';
+// import { SpeedInsights } from '@vercel/speed-insights/next';
 
 function App() {
 
@@ -42,7 +42,7 @@ function App() {
 
   return (
    <div className="w-screen min-h-screen bg-richblack-900 flex flex-col font-inter relative">
-    <SpeedInsights />
+    {/* <SpeedInsights /> */}
     {/* Navbar */}
     <Navbar/> 
 

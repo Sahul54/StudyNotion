@@ -97,7 +97,7 @@ app.use(cookieParser());
 // CORS Configuration
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://study-notion-v1-mu.vercel.app", // Your deployed frontend
+  "https://study-notion-vert-rho.vercel.app", // Your deployed frontend
 ];
 
 const corsOptions = {
